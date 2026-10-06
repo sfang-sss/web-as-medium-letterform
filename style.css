@@ -1,0 +1,378 @@
+/* =========================
+   GENERAL PAGE
+========================= */
+body {
+    background-color: #f5f5f5;
+}
+
+body {
+    margin: 0;
+    padding: 50px;
+
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 60px;
+}
+
+.s-01 {
+    transform: translate(20px, 10px);
+}
+
+.s-02 {
+    transform: translate(60px, 0px);
+}
+
+.s-06 {
+    transform: translate(15px, -300px);
+}
+
+.s-shape {
+    position: relative;
+
+    width: 180px;
+    height: 220px;
+
+    transform: translate(20px, -300px);
+}
+
+.ellipses {
+    transform: translate(300px, -550px);
+}
+
+/* =========================
+   GLOBAL LAYOUT
+========================= */
+
+.letter-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 100px 80px;
+}
+
+
+/* ==================================================
+   S 01
+   HORIZONTAL BARS
+================================================== */
+
+.s-01 {
+    position: relative;
+
+    width: 180px;
+    height: 250px;
+}
+
+
+/* shared class */
+
+.s-01 .bar {
+    position: absolute;
+
+    width: 120px;
+    height: 35px;
+
+    background: rgb(216, 151, 151);
+
+    border-radius: 20px;
+}
+
+
+/* individual positioning */
+
+.s-01 .bar-1 {
+    top: 100;
+    left: 60px;
+}
+
+.s-01 .bar-2 {
+    top: 40px;
+    left: 0;
+}
+
+.s-01 .bar-3 {
+    top: 80px;
+    left: 40px;
+}
+
+.s-01 .bar-4 {
+    top: 120px;
+    left: 70px;
+}
+
+.s-01 .bar-5 {
+    top: 160px;
+    left: 10px;
+}
+
+
+/* ==================================================
+   S 02
+   CIRCLES
+================================================== */
+/* ==================================================
+   S 02
+   CIRCLES
+================================================== */
+
+.s-02 {
+    position: relative;
+
+    width: 180px;
+    height: 250px;
+}
+
+
+/* shared circle class */
+
+.s-02 .circle {
+    position: absolute;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+}
+
+
+/* individual positioning + colors */
+
+.s-02 .circle-1 {
+    top: 45px;
+    left: 95px;
+    background: rgb(224, 53, 53);
+}
+
+.s-02 .circle-2 {
+    top: 35px;
+    left: 45px;
+    background: rgb(255, 163, 3);
+}
+
+.s-02 .circle-3 {
+    top: 70px;
+    left: 10px;
+    background: rgb(255, 255, 73);
+}
+
+.s-02 .circle-4 {
+    top: 105px;
+    left: 45px;
+    background: rgb(22, 114, 22);
+}
+
+.s-02 .circle-5 {
+    top: 140px;
+    left: 80px;
+    background: rgb(91, 255, 255);
+}
+
+.s-02 .circle-6 {
+    top: 175px;
+    left: 45px;
+    background: rgb(4, 4, 174);
+}
+
+.s-02 .circle-7 {
+    top: 150px;
+    left: 0px;
+    background: rgb(168, 0, 112);
+}
+
+
+/* ==================================================
+   S 06
+   TRIANGLES 
+================================================== */
+
+.s-06 {
+    position: relative;
+
+    width: 180px;
+    height: 250px;
+}
+
+
+/* shared triangle class */
+
+.s-06 .triangle {
+    position: absolute;
+
+    width: 0px;
+    height: 0;
+
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+
+/* individual triangles */
+
+.s-06 .triangle-1 {
+    top: -20px;
+    left: 90px;
+    transform: rotate(-270deg);
+
+    border-bottom: 45px solid black;
+}
+
+.s-06 .triangle-2 {
+    top: 35px;
+    left: 20px;
+
+    transform: rotate(-90deg);
+
+    border-bottom: 45px solid #404040;
+}
+
+.s-06 .triangle-3 {
+    top: 75px;
+    left: 80px;
+
+    transform: rotate(-180deg);
+
+    border-bottom: 45px solid #727272;
+}
+
+.s-06 .triangle-4 {
+    top: 115px;
+    left: 130px;
+
+    transform: rotate(90deg);
+
+    border-bottom: 45px solid #a6a6a6;
+}
+
+.s-06 .triangle-5 {
+    top: 155px;
+    left: 75px;
+
+    transform: rotate(30deg);
+
+    border-bottom: 45px solid rgb(223, 223, 223);
+}
+
+
+
+
+/* =========================
+   TOP SEMI-CIRCLE
+========================= */
+
+.top-semi {
+    position: absolute;
+
+    width: 100px;
+    height: 50px;
+
+    border: 20px solid rgb(58, 20, 173);
+
+    border-bottom: none;
+
+    border-radius: 100px 100px 0 0;
+
+    top: 0px;
+    left: 40px;
+}
+
+
+/* =========================
+   DIAGONAL RECTANGLE
+========================= */
+
+.diagonal {
+    position: absolute;
+
+    width: 120px;
+    height: 18px;
+
+    background: rgb(108, 11, 168);
+
+    transform: rotate(45deg);
+
+    top: 100px;
+    left: 50px;
+}
+
+
+/* =========================
+   BOTTOM SEMI-CIRCLE
+========================= */
+
+.bottom-semi {
+    position: absolute;
+
+    width: 100px;
+    height: 50px;
+
+    border: 20px solid rgb(173, 57, 150);
+
+    border-top: none;
+
+    border-radius: 0 0 100px 100px;
+
+    top: 150px;
+    left: 40px;
+}
+
+/* =========================
+
+
+
+/* =========================
+  NEW stroke circle
+========================= */
+.ellipses {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.ellipse {
+    position: absolute;
+
+    width: 250px;
+    height: 70px;
+
+    background: linear-gradient(
+    90deg,
+    rgba(120, 180, 255, 0.15),
+    rgba(160, 100, 255, 0.4),
+    rgba(120, 180, 255, 0.15)
+);
+
+    border-radius: 50%;
+}
+
+
+/* Ellipse 1 */
+
+.ellipse-1 {
+    top: 0;
+    left: 100px;
+}
+
+
+/* Ellipse 2 */
+
+.ellipse-2 {
+    top: 60px;
+    left: 0px;
+}
+
+
+/* Ellipse 3 */
+
+.ellipse-3 {
+    top: 120px;
+    left: 80px;
+}
+
+
+/* Ellipse 4 */
+
+.ellipse-4 {
+    top: 180px;
+    left: -30px;
+}
