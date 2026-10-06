@@ -204,7 +204,8 @@ h1 {
 
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-}
+
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));}
 
 
 /* individual triangles */
